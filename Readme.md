@@ -29,7 +29,7 @@ Ce projet est conçu comme un tp itératif te permettant de tester tes connaissa
       - [[:fire::fire:] [FRONT/CLOUD] Déploie le front sur Github pages](#firefire-frontcloud-déploie-le-front-sur-github-pages)
       - [[:fire:] [API/CLOUD] Déploie l'API sur Heroku](#fire-apicloud-déploie-lapi-sur-heroku)
       - [[:fire::fire:] [FRONT] C'est la crise ! Il nous faut des stats](#firefire-front-cest-la-crise--il-nous-faut-des-stats)
-      - [[:fire::fire::fire:] [API/DB/CLOUD] Utilise Google Cloud firebase pour stocker les données json](#firefirefire-apidbcloud-utilise-google-cloud-firebase-pour-stocker-les-données-json)
+      - [[:fire::fire::fire:][:heavy_check_mark:] [API/DB/CLOUD] Utilise Google Cloud firebase pour stocker les données json](#firefirefire-apidbcloud-utilise-google-cloud-firebase-pour-stocker-les-données-json)
       - [[:fire::fire:] [FRONT] Rend le site responsive pour pouvoir le visualiser sur un smartphone](#firefire-front-rend-le-site-responsive-pour-pouvoir-le-visualiser-sur-un-smartphone)
       - [[:fire::fire:] [FRONT] Met en place des tests fonctionnels avec Cypress](#firefire-front-met-en-place-des-tests-fonctionnels-avec-cypress)
       - [[:fire::fire:] [API] Met en place des tests unitaires avec jest sur l'API](#firefire-api-met-en-place-des-tests-unitaires-avec-jest-sur-lapi)
@@ -176,12 +176,16 @@ Les professeurs se sentent submergés par le nombre d'élèves dans la liste et 
 
 Sors ta plus belle librairie front pour afficher les statistiques de ton choix dans un magnifique dashboard (tu peux trouver [des exemples de dashboard ici](https://madewithreactjs.com/dashboards))
 
-#### [:fire::fire::fire:] [API/DB/CLOUD] Utilise Google Cloud firebase pour stocker les données json
+#### [:fire::fire::fire:][:heavy_check_mark:] [API/DB/CLOUD] Utilise Google Cloud firebase pour stocker les données json
 Pour l'instant, tu appelles une API externe qui est rattachée au ministère de la magie. Cependant, Poudlard voudrait être maitre de ses données et entreprend donc de rapatrier les données dans une base de donnée Cloud, à savoir: [Google Cloud firestore](https://cloud.google.com/firestore)
 
 Pour cela, instancie une database Firestore, puis copie les données de l'API dasn la collection que tu auras créée. Enfin, modifie ton API pour qu'elle aille chercher dans ta database fraichement créée.
 
 > Tu peux utiliser la doc quickstart pour t'aider: https://cloud.google.com/firestore/docs/quickstart-servers#node.js
+
+---------------------------------------------------------------------------------------------------------
+
+Toutes les routes implémentées sur la route 'real' ont leur équivalence sur la route 'real-db' comme suis : http://localhost:3000/real-db/students?house=Gryffindor
 
 #### [:fire::fire:] [FRONT] Rend le site responsive pour pouvoir le visualiser sur un smartphone 
 Les élèves de Poudlard voudraient avoir accès à la liste d'élèves en permanence et donc sur leur smartphone magique (non, non, jte jure, je force pas :smile:)
